@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background-color: #1F2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 550px;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#title-line-1 {
+  display: block; 
+}
+
+#password-title {
+  color: #4ADF86;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 51px;
+  color: #D5D4D8;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400; 
+}
+
+button {
+  margin-bottom: 35px;
+  color: white;
+  background-color: #10B981;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 17px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer; 
+}
+
+hr {
+  border: 1px solid #2F3E53;
+  margin: 0;
+}
+
+.passwords-container {
+  display: flex;
+  margin-top: 35px;
+  gap: 24px; 
+}
+
+.password {
+  background-color: #273549;
+  border-radius: 6px;
+  min-width: 180px;
+  min-height: 40px;
+  flex: 1;
+  color: #55F991;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 20px;
+}
+
+.settings-container {
+  color: #D5D4D8;
+  font-family: 'Inter';
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+#length-input {
+  background-color: #273549;
+  border: none; 
+  border-radius: 6px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Inter';
+  width: 50px;
+  height: 30px;
+}
+
+.password-long {
+  font-size: 11px; 
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+
+  .container {
+    padding: 10px 25px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+
+  .passwords-container {
+    flex-direction: column; 
+    gap: 20px;
+  }
+}
